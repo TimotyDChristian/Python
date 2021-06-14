@@ -1,3 +1,6 @@
+#To remove any irrelevant word, you can use this to add a word to stopwords:
+#stopwords.add('said')
+
 # Let's visualize our word cloud!
 
 fig = plt.figure()
