@@ -1,0 +1,7 @@
+Word Cloud is a novelty visual representation of text data, typically used to depict keyword metadata (tags) on websites, or to visualize free form text. 
+Tags are usually single words, and the importance of each tag is shown with font size or color. 
+This format is useful for quickly perceiving the most prominent terms to determine its relative prominence. 
+Bigger term means greater weight. When used as website navigation aids, the terms are hyperlinked to items associated with the tag.
+
+This section will help you to build your own word cloud with python and it's data science library matplotlib, from scratch. 
+You can use it to determine a keyword from a job openings, so you can effectively build your ATS resume.
