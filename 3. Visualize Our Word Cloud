@@ -1,0 +1,10 @@
+# Let's visualize our word cloud!
+
+fig = plt.figure()
+fig.set_figwidth(14) # set width
+fig.set_figheight(18) # set height
+
+# display the cloud
+plt.imshow(job_wc, interpolation='bilinear')
+plt.axis('off')
+plt.show()
