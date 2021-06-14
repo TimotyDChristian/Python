@@ -1,0 +1,20 @@
+# download file and save files, here we use a job openings example from https://jobseeker.kalibrr.com/c/nomura-research-institute/jobs/165772/frontend-engineer?similar_job_code=&user_ref=www.kalibrr.com_organic_null_path&job_ref=&app_source=job-board-1-1-15-5048
+!wget --quiet https://file.io/nFDlqVqmKy0y
+
+# open the file and read it into a variable job_openings
+job_openings = open('nFDlqVqmKy0y', 'r').read() 
+    
+print ('File downloaded and saved!')
+
+# Next, let's use the stopwords that we imported from word_cloud. We use the function set to remove any redundant stopwords.
+stopwords = set(STOPWORDS)
+
+# Next, let's create a word cloud object and generate a word cloud. You can limit the maximum words with max_words
+# instantiate a word cloud object
+job_wc = WordCloud(
+    background_color='white',
+    stopwords=stopwords
+)
+
+# generate the word cloud
+job_wc.generate(job_openings)
