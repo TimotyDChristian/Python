@@ -1,10 +1,13 @@
 #Unfortunately, Matplotlib doesn't have a built-in function to generate word clouds. However, a Python package already exists in Python for generating word clouds. The package, called word_cloud was developed by Andreas Mueller.
-#First, let's install the packages
+#First, let's install the package
 
 # install wordcloud
 !conda install -c conda-forge wordcloud==1.4.1 --yes
 
-# import package and its set of stopwords
+# import python matplotlib library, package and its set of stopwords
 from wordcloud import WordCloud, STOPWORDS
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
 
 print ('Wordcloud is installed, imported, and reeady to go!')
